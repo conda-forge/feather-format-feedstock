@@ -16,10 +16,10 @@ requirements:
     - setuptools
     - cython
     - pandas >=0.17.0
-    - vs2015_runtime  # [win]
   run:
     - python
     - pandas >=0.17.0
+    - vs2015_runtime  # [win]
 
 test:
   imports:
