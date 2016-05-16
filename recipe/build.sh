@@ -6,4 +6,7 @@ if [ "$(uname)" == "Darwin" ]; then
     export CXXFLAGS="${CXXFLAGS} -stdlib=libc++ -std=c++11"
 fi
 
+cd python
+ln -s ../cpp/src src
+$PYTHON setup.py build
 $PYTHON setup.py install --single-version-externally-managed --record=record.txt
