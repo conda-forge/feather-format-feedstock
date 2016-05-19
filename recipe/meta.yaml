@@ -1,16 +1,14 @@
-{% set version = "0.2.0" %}
 package:
   name: feather-format
-  version: {{ version }}
+  version: git_master
 
 source:
-  fn: feather-format-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/f/feather-format/feather-format-{{ version }}.tar.gz
-  md5: 2a66efc5ec856624bc8c66389578a14b
+  git_url: https://github.com/wesm/feather.git
+  git_rev: master
 
 build:
   number: 0
-  skip: True  # [win]
+  msvc_compiler: 14.0  # [win]
 
 requirements:
   build:
@@ -21,6 +19,7 @@ requirements:
   run:
     - python
     - pandas >=0.17.0
+    - vs2015_runtime  # [win]
 
 test:
   imports:
