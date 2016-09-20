@@ -9,8 +9,8 @@ source:
   md5: 0d3c0f5f555edc39dc98fd3758249bed
 
 build:
-  number: 0
-  skip: True  # [win]
+  number: 1
+  skip: true  # [win and py<35]
 
 requirements:
   build:
@@ -21,6 +21,7 @@ requirements:
   run:
     - python
     - pandas >=0.17.0
+    - vs2015_runtime  # [win]
 
 test:
   imports:
