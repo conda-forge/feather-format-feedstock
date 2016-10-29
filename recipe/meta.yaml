@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 package:
   name: feather-format
   version: {{ version }}
@@ -6,7 +6,7 @@ package:
 source:
   fn: feather-format-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/f/feather-format/feather-format-{{ version }}.tar.gz
-  md5: 0d3c0f5f555edc39dc98fd3758249bed
+  md5: 0b34d70b1ba1226813ed879a9c2ddcbc
 
 build:
   number: 1
