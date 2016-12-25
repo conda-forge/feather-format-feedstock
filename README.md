@@ -11,6 +11,18 @@ Summary: Feather: fast, interoperable binary data frame storage for Python, R, a
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/feather-format-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/feather-format-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/feather-format-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/feather-format-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/feather-format-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/feather-format-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/feather-format/badges/version.svg)](https://anaconda.org/conda-forge/feather-format)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/feather-format/badges/downloads.svg)](https://anaconda.org/conda-forge/feather-format)
+
 Installing feather-format
 =========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `feather-format` available on your
 ```
 conda search feather-format --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/feather-format-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/feather-format-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/feather-format-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/feather-format-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/feather-format-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/feather-format-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/feather-format/badges/version.svg)](https://anaconda.org/conda-forge/feather-format)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/feather-format/badges/downloads.svg)](https://anaconda.org/conda-forge/feather-format)
 
 
 Updating feather-format-feedstock
