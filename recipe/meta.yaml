@@ -9,8 +9,7 @@ source:
   md5: 0b34d70b1ba1226813ed879a9c2ddcbc
 
 build:
-  number: 1
-  skip: true  # [win and py<35]
+  number: 2
 
 requirements:
   build:
