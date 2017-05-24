@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 package:
   name: feather-format
   version: {{ version }}
@@ -6,22 +6,20 @@ package:
 source:
   fn: feather-format-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/f/feather-format/feather-format-{{ version }}.tar.gz
-  md5: 0b34d70b1ba1226813ed879a9c2ddcbc
+  md5: e5bc36af8a2bdbe34a0af2a602b7c1b8
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and py<35]
 
 requirements:
   build:
     - python
     - setuptools
-    - cython
-    - pandas >=0.17.0
   run:
     - python
-    - pandas >=0.17.0
-    - vs2015_runtime  # [win]
+    - pandas >=0.19.2
+    - pyarrow
 
 test:
   imports:
@@ -37,3 +35,5 @@ extra:
     - jjhelmus
     - msarahan
     - wesm
+    - cpcloud
+    - jreback
