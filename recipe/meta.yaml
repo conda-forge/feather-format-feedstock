@@ -9,7 +9,7 @@ source:
   md5: e5bc36af8a2bdbe34a0af2a602b7c1b8
 
 build:
-  number: 2
+  number: 1002
   skip: true  # [win32]
   skip: true  # [win and py<35]
   features:
