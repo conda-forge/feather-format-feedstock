@@ -6,19 +6,17 @@ package:
 source:
   fn: feather-format-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/f/feather-format/feather-format-{{ version }}.tar.gz
-  md5: e5bc36af8a2bdbe34a0af2a602b7c1b8
+  sha256: a7a0fbc727e1877354d4b4ad83f8e382a249f116241d0ccfc624cac24bddb1a9
 
 build:
-  number: 1002
-  skip: true  # [win32]
-  skip: true  # [win and py<35]
-  features:
-    - vc14  # [win and py>=35]
+  noarch: python
+  number: 1003
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - pandas >=0.19.2
