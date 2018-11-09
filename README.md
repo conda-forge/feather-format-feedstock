@@ -14,9 +14,8 @@ Summary: Feather: fast, interoperable binary data frame storage for Python, R, a
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/feather-format-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/feather-format-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/feather-format-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/feather-format-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/feather-format-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/feather-format-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/feather-format-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/feather-format-feedstock)
 
 Current release info
 ====================
