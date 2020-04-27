@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 package:
   name: feather-format
   version: {{ version }}
@@ -6,12 +6,12 @@ package:
 source:
   fn: feather-format-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/f/feather-format/feather-format-{{ version }}.tar.gz
-  sha256: a7a0fbc727e1877354d4b4ad83f8e382a249f116241d0ccfc624cac24bddb1a9
+  sha256: 45f67e3745d394d4f160ca6d636bbfd4f8b68d01199dc1649b6e487d3e878903
 
 build:
   noarch: python
-  number: 1003
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -29,7 +29,7 @@ test:
 about:
   home: https://github.com/wesm/feather
   license: Apache 2.0
-  summary: "Feather: fast, interoperable binary data frame storage for Python, R, and more powered by Apache Arrow"
+  summary: 'Feather: fast, interoperable binary data frame storage for Python, R, and more powered by Apache Arrow'
 
 extra:
   recipe-maintainers:
