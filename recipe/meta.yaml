@@ -5,24 +5,26 @@ package:
 
 source:
   fn: feather-format-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/f/feather-format/feather-format-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/f/feather-format/feather-format-{{ version }}.tar.gz
   sha256: 45f67e3745d394d4f160ca6d636bbfd4f8b68d01199dc1649b6e487d3e878903
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - pandas >=0.19.2
     - pyarrow >=0.4.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - feather
 
